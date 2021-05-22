@@ -1,8 +1,7 @@
 <div align="center"> 
 <h1 align="center">
-BiliExp <br/>
-原作者：https://github.com/happy888888 <br/>
-此项目只是备份 <br/>
+BiliExp 原作者：https://github.com/happy888888 <br/>
+此项目为原项目被删除后东拼西凑得到的，对workflow做了一小部分更改 <br/>
 </h1>
 
 <br>
