@@ -188,11 +188,11 @@
         //  "msg_raw": null,    // msg_raw为完整的日志消息，用于下面hooks消息推送接口引用，若不引用最好注释掉，否则占用内存空间
 
             "title": "B站助手脚本消息推送", // 此为自定义变量，用于下面hooks消息推送接口引用
-            "SendKey": "xxxxx",
+            "SendKey": "",
         /*  "email": "",
             "telegram_bot_token": "",
             "telegram_bot_chatid": "",
-            "SKEY": "SCT9483T3d5NZps5AVvTYIn1ipyouWNI" */
+            "SKEY": "" */
         },
         "hooks": [ // 在这里以数组的形式定义所有消息推送回调接口
         	{
@@ -207,7 +207,7 @@
                 }
             }/*,
             {
-                "enable": true,
+                "enable": false,
                 "name": "server酱消息推送",
                 "msg_separ": "\n\n",
                 "method": 1,
@@ -251,12 +251,12 @@
         ]
     },
     "log_file": "BiliExp.log",   // 输出日志文件，不输出请留空，也可填写完整路径
-    "log_console": true,         // 是否把日志输出到控制台
+    "log_console": false,         // 是否把日志输出到控制台
     "users": [{                 //账户数组，每个账户包含一个cookieDatas和tasks参数，使用actions的用户可以使用secrets(biliconfig)指定cookie而不用本参数
         "cookieDatas": {        // cookie获取方式见项目说明
-            "SESSDATA": "xxxxx",
-            "bili_jct": "xxxxx",
-            "DedeUserID": "xxxxx"
+            "SESSDATA": "账号SESSDATA",
+            "bili_jct": "账号bili_jct",
+            "DedeUserID": "账号uid"
         },
         "show_name": "", /* 昵称，用于日志，消息推送，填空则默认使用账号昵称，在actions上不想显示真实昵称时使用
         /* 下面tasks参数与最上面default参数作用相同，但优先级更高，用于定制每个账号的参数，

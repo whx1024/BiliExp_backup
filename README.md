@@ -1,5 +1,7 @@
 <div align="center"> 
-<h1 align="center"> BiliExp 原作者：https://github.com/happy888888 <br/> </h1>
+<h1 align="center">
+BiliExp
+</h1>
 
 ![image](https://user-images.githubusercontent.com/67217225/96542531-d6bcdb80-12d4-11eb-81e1-49f3d3b85dfe.png)
 <br>
@@ -16,16 +18,11 @@
 ![](https://img.shields.io/docker/pulls/happy888888/biliexp?color=purple "docker拉取数")
 ![](https://img.shields.io/docker/image-size/happy888888/biliexp "docker镜像大小")
 
-</br>
-</br>
-
 </div>
 
-<h3>备份者注</h3>
- 
-* 此项目为原项目被删除后东拼西凑得到的，版本为v1.2.1，无法保证全部功能都可实现，因为无法保证此项目不被再次删除，不建议对该repo进行fork
-* 对workflow做了一小部分更改，如有需求请自行更改`/.github/workflow/run_BiliExp.yml`下的cron参数
-
+| ↳ Stargazers | ↳ Forkers |
+|  :---:  | :---:  |
+| [![Stargazers repo roster for @happy888888/BiliExp](https://reporoster.com/stars/happy888888/BiliExp)](https://github.com/happy888888/BiliExp/stargazers)  | [![Forkers repo roster for @happy888888/BiliExp](https://reporoster.com/forks/happy888888/BiliExp)](https://github.com/happy888888/BiliExp/network/members) |
 
 # 项目说明
 
@@ -411,7 +408,7 @@
 
 </br></br></br>
 
-## 打赏 (不确定是否为原作者@happy888888打赏码)
+## 打赏
 如果觉得本项目好用，对你有所帮助，欢迎打赏支持一下本项目发展！！！
 
 <div align="center">
