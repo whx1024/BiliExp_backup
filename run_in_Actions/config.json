@@ -3,7 +3,7 @@
 {
     "version": "1.2.1", // 配置文件版本,严禁修改
     "http_header": {    // http头部，访问B站时使用  注:User-Agent建议改为常用的浏览器ua(下面是google浏览器)，其他的不改
-    	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+    	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36 Edg/92.0.902.84",
     	"Referer": "https://www.bilibili.com/",
     	"Connection": "keep-alive"
     },
@@ -53,7 +53,8 @@
             "search_interval": 300,     //搜索执行周期，值为整数(单位秒)，搜索直播间->抽奖->等待搜索周期->下一轮搜索
             "search_areas": [           //搜索区域数组，数组中每个值包含一个直播分区，在分区数组中搜索直播间
                 {"paid": 1,"aid": 0,"sort": "","ps": 40},
-                {"paid": 2,"aid": 0,"sort": "","ps": 40},
+                {"paid": 9,"aid": 0,"sort": "","ps": 40},
+                {"paid": 10,"aid": 0,"sort": "","ps": 40},
                 {"paid": 3,"aid": 0,"sort": "","ps": 40}
                 /* paid 大区域id，值为整数，目前已知区域 2网游 3手游 6单机 1娱乐 5电台 9虚拟主播 10生活 11学习
                    aid  小区域id，值为整数，0为全部区域，在娱乐分区下有 145视频聊天 399日常，在网游分区下有 86英雄联盟 80绝地求生，这里不详细列举
@@ -107,7 +108,7 @@
         "share_task": true,       // 任务:模拟分享一个随机视频(加经验值，并不会真的分享)，值为true或false分别代表开启和关闭
         "silver2coin_task": true, // 任务:银瓜子兑换硬币，值为true或false分别代表开启和关闭
         "lottery_task": {         // 任务:动态抽奖转发评论点赞
-            "enable": true,       //任务开关，值为true或false分别代表开启和关闭
+            "enable": false,       //任务开关，值为true或false分别代表开启和关闭
             "reply": ["从未中奖，从未放弃[doge]", "支持支持"],  // 回复原动态评论，值为字符串数组，每次转发时会随机抽一个
             "repost": ["从未中奖，从未放弃[doge]", "支持支持"], // 转到自己动态的评论，值为字符串数组，每次转发时会随机抽一个
                                                              // 关键字匹配转发，值为字符串数组，支持正则表达式匹配，匹配上关键字的动态才转发
@@ -153,7 +154,7 @@
             "num": 0              // 兑换数量，值为整数
         },
         "manga_vip_reward_task": {// 任务:领取每月大会员漫画权益(漫读劵)
-            "enable": true,       // 任务开关，值为true或false分别代表开启和关闭
+            "enable": false,       // 任务开关，值为true或false分别代表开启和关闭
             "days": [1]           // 每月尝试领取的日期,值为整数数组,指定多个日期会重复尝试领取
         },
         "manga_auto_buy_task": {  // 任务:自动花费即将过期的漫读劵
@@ -162,7 +163,7 @@
             "filter": "25900|1-30,35,55;25966|5,15,35-" //过滤漫画参数，值为字符串，格式为"漫画mc号1|章节序号1,章节序号2;漫画mc号2|章节序号1,章节序号2"这样的格式指定要购买的漫画
         },
         "judgement_task": {      //  任务:风纪委员投票
-            "enable": true,      //  任务开关，值为true或false分别代表开启和关闭
+            "enable": false,      //  任务开关，值为true或false分别代表开启和关闭
             "run_once": false,   //没有案件立即退出，值为true或false，值为false才会等待超时退出(Actions上默认)，云函数上推荐设置为true并每隔30分钟调用此功能
             "params": {      // 默认投票参数，vote值程序会自动使用从众法填写，注意此项下面的可选子参数的值不止vote和attr两个，其他参数请看项目的说明文件(其他参数均为非必须参数可以不需要)
                 "vote": 4,   // 投票类型，值为整数，4为投删除票，其他取值看项目说明文件，非必须参数此行可以删除但不建议
