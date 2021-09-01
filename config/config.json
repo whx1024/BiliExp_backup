@@ -3,7 +3,7 @@
 {
     "version": "1.2.1", // 配置文件版本,严禁修改
     "http_header": {    // http头部，访问B站时使用  注:User-Agent建议改为常用的浏览器ua(下面是google浏览器)，其他的不改
-    	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+    	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36 Edg/92.0.902.84",
     	"Referer": "https://www.bilibili.com/",
     	"Connection": "keep-alive"
     },
